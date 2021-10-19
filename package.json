@@ -6,15 +6,50 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "codegen": "gql-gen --watch",
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "@mui/material": "^5.0.4",
+    "@mui/styled-engine-sc": "^5.0.3",
+    "@types/apollo-upload-client": "^14.1.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "apollo-upload-client": "^16.0.0",
+    "graphql": "^15.6.1",
+    "graphql-tag": "^2.12.5",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "@graphql-codegen/cli": "^2.2.1",
+    "@graphql-codegen/introspection": "^2.1.0",
+    "@graphql-codegen/schema-ast": "^2.2.0",
+    "@graphql-codegen/typescript": "^2.2.4",
+    "@graphql-codegen/typescript-operations": "^2.1.8",
+    "@graphql-codegen/typescript-react-apollo": "^3.1.6",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^16.11.1",
+    "@types/react": "^17.0.30",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4
   }
 }
